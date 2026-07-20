@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c2c7cf",
+                        "background": "#f7f9ff",
+                        "tertiary-fixed": "#a3f3cf",
+                        "secondary-fixed-dim": "#f6bd53",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d1dbe8",
+                        "secondary": "#7d5700",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#00513a",
+                        "on-primary-fixed-variant": "#24496c",
+                        "surface-variant": "#d9e3f1",
+                        "primary-fixed": "#d0e4ff",
+                        "primary": "#002541",
+                        "surface": "#f7f9ff",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#00422f",
+                        "on-tertiary-container": "#63b291",
+                        "primary-fixed-dim": "#a6caf3",
+                        "on-surface-variant": "#42474e",
+                        "on-primary-container": "#82a5cd",
+                        "on-secondary-fixed-variant": "#5f4100",
+                        "on-secondary-container": "#725000",
+                        "on-background": "#121d26",
+                        "surface-bright": "#f7f9ff",
+                        "secondary-container": "#fdc257",
+                        "inverse-surface": "#27313c",
+                        "secondary-fixed": "#ffdeaa",
+                        "on-secondary-fixed": "#271900",
+                        "surface-container-high": "#dfe9f7",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#e8f2ff",
+                        "surface-container": "#e4effd",
+                        "on-surface": "#121d26",
+                        "primary-container": "#123b5d",
+                        "tertiary": "#002a1c",
+                        "surface-container-highest": "#d9e3f1",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#87d6b4",
+                        "on-primary-fixed": "#001d34",
+                        "on-tertiary-fixed": "#002115",
+                        "surface-container-low": "#edf4ff",
+                        "inverse-primary": "#a6caf3",
+                        "surface-tint": "#3d6185",
+                        "outline": "#73777f",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "12px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "stack-lg": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Manrope"],
+                        "body-sm": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "display-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-sm": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-bold": ["16px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    },
+                    "boxShadow": {
+                        'level-1': '0px 4px 20px rgba(18, 59, 93, 0.08)',
+                        'level-2': '0px 12px 32px rgba(18, 59, 93, 0.12)',
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="antialiased">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm w-full"><div class="bg-surface-container-low border-b border-outline-variant/10 py-2 px-12">
+    <div class="max-w-container-max mx-auto flex justify-between items-center text-body-sm font-medium text-on-surface-variant">
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-body-sm">check_circle</span>
+                <span class="">No hidden charges</span>
+            </div>
+            <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-body-sm">hotel</span>
+                <span class="">Verified hotels</span>
+            </div>
+            <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-body-sm">support_agent</span>
+                <span class="">24/7 travel support</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+                <span class="material-symbols-outlined cursor-pointer hover:text-primary">compare_arrows</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-body-sm">call</span>
+                <span class="font-bold">+91 1800-PILGRIM</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex justify-between items-center w-full px-12 max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<div class="flex items-center gap-2">
+<a href="#" class="text-headline-lg font-headline-lg font-bold text-primary dark:text-primary-fixed">
+                    DharmaYatra
+                </a>
+</div>
+<!-- Navigation (Web) -->
+<nav class="hidden md:flex items-center gap-8 h-full"><a class="h-full flex flex-col justify-center text-on-surface-variant font-bold text-label-bold border-b-2 border-secondary" href="#">
+    <span class="">Tour</span>
+    <span class="">Packages</span>
+</a>
+<a class="h-full flex flex-col justify-center text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">
+    <span class="">Pilgrimage</span>
+    <span class="">Tours</span>
+</a>
+<a class="h-full flex flex-col justify-center text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">
+    <span class="">Group</span>
+    <span class="">Tours</span>
+</a>
+<a class="h-full flex flex-col justify-center text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">
+    <span class="">AI Trip</span>
+    <span class="">Planner</span>
+</a>
+<a class="h-full flex items-center text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">About</a></nav>
+<!-- Actions (Web) -->
+<div class="hidden md:flex items-center gap-4 h-full"><button class="bg-primary text-on-primary font-bold px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-sm">
+    Enquire Now
+</button></div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full pb-24">
+<!-- Hero Section -->
+<section class="relative bg-primary text-on-primary overflow-hidden pt-20 pb-32">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, #ffdeaa 0%, transparent 50%);"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="space-y-stack-md">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg">
+                        Travel Organised with Care, Experience and Trust
+                    </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl">
+                        For over 15 years, DharmaYatra has been dedicated to crafting serene, meticulously planned spiritual journeys, ensuring comfort, safety, and deep devotion for every pilgrim, especially our senior travellers.
+                    </p>
+<div class="pt-stack-sm flex flex-wrap gap-stack-md">
+<div class="bg-primary-container/50 border border-outline-variant/20 rounded-xl p-4 min-w-[140px]">
+<p class="font-headline-lg text-headline-lg text-secondary-fixed">15+</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Years Experience</p>
+</div>
+<div class="bg-primary-container/50 border border-outline-variant/20 rounded-xl p-4 min-w-[140px]">
+<p class="font-headline-lg text-headline-lg text-secondary-fixed">10k+</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Happy Travellers</p>
+</div>
+<div class="bg-primary-container/50 border border-outline-variant/20 rounded-xl p-4 min-w-[140px]">
+<p class="font-headline-lg text-headline-lg text-secondary-fixed">500+</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Tours Completed</p>
+</div>
+<div class="bg-primary-container/50 border border-outline-variant/20 rounded-xl p-4 min-w-[140px]">
+<div class="flex items-center gap-1 text-secondary-fixed mb-1">
+<p class="font-headline-lg text-headline-lg">4.8</p>
+<span class="material-symbols-outlined filled text-xl">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Average Rating</p>
+</div>
+</div>
+</div>
+<div class="relative h-96 lg:h-auto w-full aspect-square lg:aspect-auto">
+<img class="object-cover w-full h-full rounded-2xl shadow-level-2 border-4 border-surface/10" data-alt="A high-quality, professional photograph of a diverse, multi-generational Indian family deeply engaged in prayer at a serene temple overlooking a river during golden hour. The warm, inviting light highlights their peaceful expressions and the rich textures of the ancient stone architecture, conveying a sense of spiritual connection and safe travel. The color palette incorporates deep blues and golden ambers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMaKtadcwUM8ha5OUjiYYGi6EU20wMA_CzvgUJyzgAY4rd8j51E-uHAK8KSW3ksP3eri7Dcn9xqynhJDm7ySQ8nyV6tR_1Nu2Bs6TZJ2zveiuwQh3rUEn3opiQOFEJe4N44hWOeS5_C9KwnID3hrLo7_eAHhbTf-uG_bu9M_MVjWEEO3TiWri9wC3HIruuVf9qASSTX1jSZtp4Y0aSRcq2UB-SPVOeKxOGku4BWxlrV9Fkn4Gpglym4ESOOFjqEapBQ2jXZ8C4TMY">
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-12 py-20 -mt-16 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Value 1 -->
+<div class="bg-surface rounded-xl p-6 shadow-level-1 border border-outline-variant/10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined">shield_person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Unwavering Safety</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We prioritize your well-being with rigorous safety protocols, vetted partners, and 24/7 on-ground support, ensuring peace of mind.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface rounded-xl p-6 shadow-level-1 border border-outline-variant/10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined">elderly</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Senior Comfort</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tailored itineraries with accessible accommodations, minimal walking requirements, and dedicated assistance for older devotees.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface rounded-xl p-6 shadow-level-1 border border-outline-variant/10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Deep Respect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every journey is conducted with the utmost reverence for local customs, traditions, and the spiritual significance of the sites.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface rounded-xl p-6 shadow-level-1 border border-outline-variant/10 flex flex-col gap-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Total Transparency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear, upfront pricing with no hidden fees. We believe in honest communication regarding every aspect of your itinerary.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary dark:bg-surface-container-highest border-t border-outline-variant/10 py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-12 max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md text-secondary-fixed">DharmaYatra</span>
+<p class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm">Guiding your spiritual journeys with trust, care, and devotion since 2008.</p>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<span class="font-headline-md text-headline-md text-on-primary dark:text-on-surface">Explore</span>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Company</a>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Explore</a>
+</div>
+<!-- Legal Column -->
+<div class="flex flex-col gap-3">
+<span class="font-headline-md text-headline-md text-on-primary dark:text-on-surface">Legal</span>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Legal</a>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Terms of Service</a>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Privacy Policy</a>
+</div>
+<!-- Contact Column -->
+<div class="flex flex-col gap-3">
+<span class="font-headline-md text-headline-md text-on-primary dark:text-on-surface">Contact Us</span>
+<a class="text-on-primary/80 dark:text-on-surface-variant font-body-sm text-body-sm hover:text-secondary-fixed-dim transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-fixed w-max" href="#">Contact Us</a>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-12 pt-stack-md mt-stack-md border-t border-on-primary/10">
+<p class="text-center font-body-sm text-body-sm text-on-primary/60">
+                © 2024 DharmaYatra Pilgrimages. All rights reserved.
+            </p>
+</div>
+</footer>
+
+
+
+</body></html>

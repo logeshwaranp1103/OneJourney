@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang="en" class="light" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "surface-container-lowest": "#ffffff",
+                            "on-secondary-fixed": "#271900",
+                            "surface-container": "#e4effd",
+                            "primary-fixed": "#d0e4ff",
+                            "on-surface": "#121d26",
+                            "secondary": "#7d5700",
+                            "tertiary-fixed": "#a3f3cf",
+                            "on-primary-fixed": "#001d34",
+                            "surface-dim": "#d1dbe8",
+                            "on-error": "#ffffff",
+                            "primary-fixed-dim": "#a6caf3",
+                            "on-primary-container": "#82a5cd",
+                            "inverse-on-surface": "#e8f2ff",
+                            "inverse-primary": "#a6caf3",
+                            "on-error-container": "#93000a",
+                            "inverse-surface": "#27313c",
+                            "on-secondary": "#ffffff",
+                            "primary-container": "#123b5d",
+                            "outline": "#73777f",
+                            "on-tertiary-fixed-variant": "#00513a",
+                            "error": "#ba1a1a",
+                            "primary": "#002541",
+                            "surface-tint": "#3d6185",
+                            "surface": "#f7f9ff",
+                            "on-tertiary-container": "#63b291",
+                            "on-secondary-container": "#725000",
+                            "tertiary-fixed-dim": "#87d6b4",
+                            "secondary-fixed": "#ffdeaa",
+                            "surface-bright": "#f7f9ff",
+                            "on-surface-variant": "#42474e",
+                            "on-tertiary": "#ffffff",
+                            "on-tertiary-fixed": "#002115",
+                            "surface-container-high": "#dfe9f7",
+                            "surface-container-low": "#edf4ff",
+                            "secondary-fixed-dim": "#f6bd53",
+                            "on-background": "#121d26",
+                            "secondary-container": "#fdc257",
+                            "on-primary": "#ffffff",
+                            "surface-variant": "#d9e3f1",
+                            "tertiary": "#002a1c",
+                            "on-primary-fixed-variant": "#24496c",
+                            "on-secondary-fixed-variant": "#5f4100",
+                            "surface-container-highest": "#d9e3f1",
+                            "outline-variant": "#c2c7cf",
+                            "background": "#f7f9ff",
+                            "tertiary-container": "#00422f",
+                            "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "stack-sm": "12px",
+                            "stack-md": "24px",
+                            "margin-mobile": "20px",
+                            "base": "8px",
+                            "stack-lg": "48px",
+                            "container-max": "1280px",
+                            "gutter": "24px"
+                    },
+                    "fontFamily": {
+                            "headline-md": [
+                                    "Manrope"
+                            ],
+                            "display-lg": [
+                                    "Manrope"
+                            ],
+                            "headline-lg": [
+                                    "Manrope"
+                            ],
+                            "label-bold": [
+                                    "Inter"
+                            ],
+                            "display-lg-mobile": [
+                                    "Manrope"
+                            ],
+                            "body-lg": [
+                                    "Inter"
+                            ],
+                            "body-sm": [
+                                    "Inter"
+                            ],
+                            "body-md": [
+                                    "Inter"
+                            ]
+                    },
+                    "fontSize": {
+                            "headline-md": [
+                                    "24px",
+                                    {
+                                            "lineHeight": "1.4",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "display-lg": [
+                                    "48px",
+                                    {
+                                            "lineHeight": "1.1",
+                                            "letterSpacing": "-0.02em",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "headline-lg": [
+                                    "32px",
+                                    {
+                                            "lineHeight": "1.3",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "label-bold": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "letterSpacing": "0.05em",
+                                            "fontWeight": "600"
+                                    }
+                            ],
+                            "display-lg-mobile": [
+                                    "36px",
+                                    {
+                                            "lineHeight": "1.2",
+                                            "fontWeight": "700"
+                                    }
+                            ],
+                            "body-lg": [
+                                    "20px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-sm": [
+                                    "16px",
+                                    {
+                                            "lineHeight": "1.5",
+                                            "fontWeight": "400"
+                                    }
+                            ],
+                            "body-md": [
+                                    "18px",
+                                    {
+                                            "lineHeight": "1.6",
+                                            "fontWeight": "400"
+                                    }
+                            ]
+                    }
+            },
+                },
+        }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="bg-background text-on-background font-body-md antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest shadow-sm docked full-width top-0 sticky z-50">
+  <!-- Top Utility Bar -->
+  <div class="bg-surface-container-low border-b border-outline-variant">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-stack-lg max-w-container-max mx-auto py-2 text-xs text-on-surface-variant">
+      <!-- Left: Trust Indicators -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1">
+          <span class="material-symbols-outlined text-sm">check_circle</span>
+          <span class="">No hidden charges</span>
+        </div>
+        <div class="hidden md:flex items-center gap-1 border-l border-outline-variant pl-4">
+          <span class="material-symbols-outlined text-sm">hotel</span>
+          <span class="">Verified hotels</span>
+        </div>
+        <div class="hidden md:flex items-center gap-1 border-l border-outline-variant pl-4">
+          <span class="material-symbols-outlined text-sm">support_agent</span>
+          <span class="">24/7 travel support</span>
+        </div>
+      </div>
+      <!-- Right: Icons and Phone -->
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
+          <button class="hover:text-primary transition-colors" aria-label="Language">
+            <span class="material-symbols-outlined text-[18px]">language</span>
+          </button>
+          <button class="hover:text-primary transition-colors" aria-label="Compare">
+            <span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+          </button>
+        </div>
+        <div class="flex items-center gap-1 font-label-bold text-primary border-l border-outline-variant pl-4">
+          <span class="material-symbols-outlined text-sm">call</span>
+          <span class="">+91 1800-PILGRIM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Navbar -->
+  <div class="flex justify-between items-center w-full px-margin-mobile md:px-stack-lg max-w-container-max mx-auto h-20 gap-8">
+    <!-- Brand -->
+    <a href="#" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+      DharmaYatra
+    </a>
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex gap-8 h-full items-center">
+      <li class="h-full flex items-center">
+        <a href="#" class="text-primary border-b-2 border-secondary font-bold pb-1 font-body-sm text-body-sm active:scale-95 transition-transform duration-200">Tour Packages</a>
+      </li>
+      <li class="h-full flex items-center">
+        <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm active:scale-95 transition-transform duration-200">Pilgrimage Tours</a>
+      </li>
+      <li class="h-full flex items-center">
+        <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm active:scale-95 transition-transform duration-200">Group Tours</a>
+      </li>
+      <li class="h-full flex items-center">
+        <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm active:scale-95 transition-transform duration-200">AI Trip Planner</a>
+      </li>
+      <li class="h-full flex items-center">
+        <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm text-body-sm active:scale-95 transition-transform duration-200">About</a>
+      </li>
+    </ul>
+    <!-- Actions -->
+    <div class="flex items-center gap-4">
+      <button class="bg-primary text-on-primary font-label-bold text-label-bold h-12 px-6 rounded-lg items-center justify-center hover:bg-opacity-90 transition-colors active:scale-95">
+        Enquire Now
+      </button>
+      <!-- Mobile Menu Toggle -->
+      <button class="p-2 hover:bg-surface-variant rounded-full transition-colors active:scale-95 md:hidden" aria-label="Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full px-margin-mobile md:px-stack-lg max-w-container-max mx-auto py-stack-md flex flex-col gap-stack-md">
+<!-- Header Section -->
+<header class="flex flex-col gap-stack-sm">
+<!-- Breadcrumbs -->
+<nav class="flex text-on-surface-variant font-body-sm text-body-sm" aria-label="Breadcrumb">
+<ol class="inline-flex items-center space-x-1 md:space-x-2">
+<li class="inline-flex items-center">
+<a href="#" class="inline-flex items-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm mr-1">home</span>
+                            Home
+                        </a>
+</li>
+<li class="">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<a href="#" class="hover:text-primary transition-colors">Packages</a>
+</div>
+</li>
+<li aria-current="page" class="">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<span class="text-primary font-medium">South India</span>
+</div>
+</li>
+</ol>
+</nav>
+<div class="flex flex-col md:flex-row md:justify-between md:items-end gap-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-lg md:text-display-lg text-primary">Explore Our Tour Packages</h1>
+<p class="text-on-surface-variant mt-2">Showing 124 Packages</p>
+</div>
+<!-- Sorting & Active Filters (Desktop) -->
+<div class="flex flex-col gap-4 items-start md:items-end w-full md:w-auto">
+<!-- Sorting -->
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Sort by:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest border border-outline-variant rounded-lg py-2 pl-4 pr-10 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent cursor-pointer">
+<option>Recommended</option>
+<option>Price: Low to High</option>
+<option>Highest Rated</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Filter Chips -->
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-surface-variant text-on-surface-variant rounded-full font-body-sm text-body-sm">
+                    South India
+                    <button class="hover:text-primary transition-colors focus:outline-none" aria-label="Remove filter">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-surface-variant text-on-surface-variant rounded-full font-body-sm text-body-sm">
+                    Senior Citizen Friendly
+                    <button class="hover:text-primary transition-colors focus:outline-none" aria-label="Remove filter">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</span>
+<button class="text-primary text-body-sm font-medium hover:underline px-2 py-1">Clear All</button>
+</div>
+</header>
+<!-- Main Layout: Sidebar + Grid -->
+<div class="flex flex-col lg:flex-row gap-gutter relative">
+<!-- Mobile Filter Toggle Button (Sticky) -->
+<div class="lg:hidden sticky top-20 z-40 bg-background py-2">
+<button class="w-full flex items-center justify-center gap-2 bg-surface-container-lowest border border-outline-variant rounded-lg py-3 font-label-bold text-label-bold text-primary shadow-sm">
+<span class="material-symbols-outlined">tune</span>
+                    Filters
+                 </button>
+</div>
+<!-- Sidebar Filters -->
+<aside class="hidden lg:flex w-72 flex-shrink-0 flex-col gap-6">
+<!-- Filter Container Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(18,59,93,0.08)] p-6 flex flex-col gap-6 sticky top-28">
+<div class="flex justify-between items-center pb-4 border-b border-surface-variant">
+<h2 class="font-headline-md text-[20px] font-semibold text-primary">Filters</h2>
+<button class="text-secondary font-body-sm text-body-sm hover:underline">Reset</button>
+</div>
+<!-- Toggle: Senior Friendly -->
+<div class="flex items-center justify-between p-3 bg-surface-container rounded-lg border border-primary-fixed-dim">
+<div class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined fill text-secondary">elderly</span>
+<span class="">Senior-Friendly</span>
+</div>
+<!-- Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input type="checkbox" value="" class="sr-only peer" checked="">
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Filter Category: Map/Destination -->
+<div class="flex flex-col gap-3">
+<h3 class="font-label-bold text-label-bold text-on-surface">Destination</h3>
+<div class="relative w-full h-40 bg-surface-variant rounded-lg overflow-hidden flex items-center justify-center border border-outline-variant">
+<img class="object-cover w-full h-full opacity-80 mix-blend-multiply" data-alt="A clean, minimalist vector map of India highlighting the Southern region in a soft primary blue. The style is modern corporate, light mode, with subtle geographic lines on a warm off-white background." data-location="India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ0P1QZYxBuTu-qUFjbIa4Amp1JXStd3FVNTuLppodm0IaCM2jXcQU2uYCPldthAGb-a10PIutsbvIcbJ6BKJ_c5WF9LeQB87htDR64pplppX3xVZ-o_yL6g-f37Fu5zMAISgo7kS--p3vRtc2tUI3yOnXTYNzWNyZB-iAH_4Uwro-EjBNlbmPdkVtyBZnYS4lyPXedp-rWqjBHjoNGq6uWWGtQ1sBateoBF-t4Rq7H2TSOSqHBuqO9-2GTjq4vWwhkVd0r8xKByE">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent flex items-end p-3 pointer-events-none">
+<span class="text-on-primary font-label-bold text-sm">Select Region</span>
+</div>
+</div>
+</div>
+<!-- Filter Category: Type -->
+<div class="flex flex-col gap-3">
+<h3 class="font-label-bold text-label-bold text-on-surface">Category</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">Pilgrimage</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">Family Leisure</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">Heritage</span>
+</label>
+</div>
+</div>
+<!-- Filter Category: Budget -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<h3 class="font-label-bold text-label-bold text-on-surface">Budget (Per Person)</h3>
+</div>
+<div class="px-2">
+<!-- Dual Slider visual representation -->
+<div class="relative h-1 bg-surface-variant rounded-full w-full">
+<div class="absolute h-full bg-primary rounded-full left-[10%] right-[30%]"></div>
+<div class="absolute h-5 w-5 rounded-full bg-primary border-2 border-white shadow top-1/2 -translate-y-1/2 -ml-2.5 left-[10%] cursor-pointer"></div>
+<div class="absolute h-5 w-5 rounded-full bg-primary border-2 border-white shadow top-1/2 -translate-y-1/2 -mr-2.5 right-[30%] cursor-pointer"></div>
+</div>
+</div>
+<div class="flex justify-between text-body-sm font-medium text-on-surface-variant">
+<span class="">₹5,000</span>
+<span class="">₹50,000+</span>
+</div>
+</div>
+<!-- Filter Category: Duration -->
+<div class="flex flex-col gap-3">
+<h3 class="font-label-bold text-label-bold text-on-surface">Duration</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">1 - 3 Days</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">4 - 7 Days</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-on-surface-variant font-body-sm group-hover:text-primary transition-colors">8+ Days</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Package Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col group hover:shadow-[0px_12px_32px_rgba(18,59,93,0.12)] transition-shadow duration-300 relative border border-surface-variant">
+<!-- Image Area -->
+<div class="relative h-48 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A serene view of the Meenakshi Temple in Madurai at sunrise. The architecture is grand and colorful, bathed in warm, soft morning light. The mood is peaceful and spiritual. High-quality travel photography style suitable for a premium tour website." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaXpOw4ILR2XTGRpyUgkLYMcAC3qqniFkSctVDb4dcSwE-fKo6oevAJUHZDjLFpIQhfh3t-l3kW1a-OCU9HdYatqIEY8jAfk_Kvxmek8USk965lCjpvAAUNL23PK9CBJI5IAl6kwYYhpIfZheYjjQA70fTkNrSjHfupqqf0oz7X8UehQOAvyCE1pKVYej6krd2gqmT_HqVFnqkg4RVBlvyu7K6HeZ0RYpV6mWko91Um8KmG2L5YVUq6cGeIxcRYPJCYH9dsFjdeZE">
+<!-- Tags -->
+<div class="absolute top-3 left-3 flex flex-col gap-2">
+<span class="bg-primary/90 text-on-primary text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">BESTSELLER</span>
+</div>
+<!-- Save/Favorite -->
+<button aria-label="Save package" class="absolute top-3 right-3 p-2 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Content Area -->
+<div class="p-5 flex flex-col flex-grow gap-4">
+<!-- Title & Rating -->
+<div>
+<div class="flex justify-between items-start gap-2 mb-1">
+<h3 class="font-headline-md text-[20px] text-on-surface leading-tight group-hover:text-primary transition-colors">Divine Madurai &amp; Rameshwaram Yatra</h3>
+</div>
+<div class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary-container fill">star</span>
+<span class="font-bold text-on-surface">4.8</span>
+<span class="">(124 reviews)</span>
+</div>
+</div>
+<!-- Key Details -->
+<div class="flex items-center gap-4 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="">5 Days / 4 Nights</span>
+</div>
+</div>
+<!-- Inclusion Tray -->
+<div class="flex gap-4 border-t border-b border-surface-variant py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 flex-1" title="Premium Hotel">
+<span class="material-symbols-outlined text-secondary text-[22px]">hotel</span>
+<span class="text-[10px] uppercase font-bold text-outline">Hotel</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="All Meals Included">
+<span class="material-symbols-outlined text-secondary text-[22px]">restaurant</span>
+<span class="text-[10px] uppercase font-bold text-outline">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="AC Transport">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+<span class="text-[10px] uppercase font-bold text-outline">Transit</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="Expert Guide">
+<span class="material-symbols-outlined text-secondary text-[22px]">person_raised_hand</span>
+<span class="text-[10px] uppercase font-bold text-outline">Guide</span>
+</div>
+</div>
+<!-- Footer: Price & Compare -->
+<div class="flex justify-between items-end pt-2">
+<label class="flex items-center gap-2 cursor-pointer group/compare">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-sm font-medium text-on-surface-variant group-hover/compare:text-primary transition-colors">Compare</span>
+</label>
+<div class="text-right">
+<div class="text-xs text-on-surface-variant mb-1">Starting from</div>
+<div class="font-headline-md text-primary text-[22px] leading-none">₹18,500</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Package Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col group hover:shadow-[0px_12px_32px_rgba(18,59,93,0.12)] transition-shadow duration-300 relative border border-surface-variant">
+<!-- Image Area -->
+<div class="relative h-48 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="The grand Tirupati Balaji temple complex with a bustling but orderly crowd of pilgrims. The sky is clear blue. The scene conveys devotion and scale, shot in a premium, high-contrast style typical of modern travel editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDEtH6CKIAJVgiR5X72lsSjGTKEQ9ppZH6mTQi2joArQvwNqMHP4VICUUyOzQ8cB5GLQJ8AgcC2c250H9nsj2pS3iGBw8yPtOZArugUZNNZ5DkeGbTyt5OX-UUUqD345M7DwoAWXo1Bn8FjylyCLDM2mtBP-OoKDO0p-PCePvo64gnRNPZ8cO0WgAw3c7ZxXl3aj-4LCq-VuAL9P_iYIQn7nlM7UiyDXQSZYa0laRw6nBBZKM-BfkDD6sFmEwxACLHM6Zgr2r_u-I">
+<!-- Tags -->
+<div class="absolute top-3 left-3 flex flex-col gap-2">
+<span class="bg-secondary text-on-secondary text-xs font-bold px-2 py-1 rounded backdrop-blur-sm">SPECIAL DARSHAN</span>
+</div>
+<!-- Save/Favorite -->
+<button aria-label="Save package" class="absolute top-3 right-3 p-2 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Content Area -->
+<div class="p-5 flex flex-col flex-grow gap-4">
+<!-- Title & Rating -->
+<div>
+<div class="flex justify-between items-start gap-2 mb-1">
+<h3 class="font-headline-md text-[20px] text-on-surface leading-tight group-hover:text-primary transition-colors">Tirupati Special Darshan Tour</h3>
+</div>
+<div class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary-container fill">star</span>
+<span class="font-bold text-on-surface">4.9</span>
+<span class="">(312 reviews)</span>
+</div>
+</div>
+<!-- Key Details -->
+<div class="flex items-center gap-4 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="">3 Days / 2 Nights</span>
+</div>
+</div>
+<!-- Inclusion Tray -->
+<div class="flex gap-4 border-t border-b border-surface-variant py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 flex-1" title="Premium Hotel">
+<span class="material-symbols-outlined text-secondary text-[22px]">hotel</span>
+<span class="text-[10px] uppercase font-bold text-outline">Hotel</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1 opacity-40" title="Meals Not Included">
+<span class="material-symbols-outlined text-outline text-[22px]">restaurant</span>
+<span class="text-[10px] uppercase font-bold text-outline">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="AC Transport">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+<span class="text-[10px] uppercase font-bold text-outline">Transit</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1 opacity-40" title="Guide Not Included">
+<span class="material-symbols-outlined text-outline text-[22px]">person_raised_hand</span>
+<span class="text-[10px] uppercase font-bold text-outline">Guide</span>
+</div>
+</div>
+<!-- Footer: Price & Compare -->
+<div class="flex justify-between items-end pt-2">
+<label class="flex items-center gap-2 cursor-pointer group/compare">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-sm font-medium text-on-surface-variant group-hover/compare:text-primary transition-colors">Compare</span>
+</label>
+<div class="text-right">
+<div class="text-xs text-on-surface-variant mb-1">Starting from</div>
+<div class="font-headline-md text-primary text-[22px] leading-none">₹9,200</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Package Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col group hover:shadow-[0px_12px_32px_rgba(18,59,93,0.12)] transition-shadow duration-300 relative border border-surface-variant">
+<!-- Image Area -->
+<div class="relative h-48 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A tranquil scene of the backwaters in Kerala with a traditional houseboat slowly moving. Lush green palm trees line the water. The mood is highly relaxing and premium, photographed in bright, inviting light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6DotzZIqjF7mIIJlFlsPmVQBERi8jzDCh6lu92NWeXQrEGE9KpVYzUmR_BZaspIIFGuvnDdANKL4U9hH7ii39iSIWxhJyc0xgCaTvNVos1Dd6K567cODCJrvHgq5pkpMIsJe0o41mn7C3UutNC9sIvVJ33bTKIemVyYJgwUg4hY0XCWX-WSBQUi16QFs12_mA7dAEXDu2Ysp5obyRex8eUQz3_G9YB4DfgU4uFPXGQtCq8QnFQXNdb_asUDZiZkp2LmCtJBTEGTI">
+<!-- Save/Favorite -->
+<button aria-label="Save package" class="absolute top-3 right-3 p-2 bg-surface-container-lowest/80 backdrop-blur-sm rounded-full text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Content Area -->
+<div class="p-5 flex flex-col flex-grow gap-4">
+<!-- Title & Rating -->
+<div>
+<div class="flex justify-between items-start gap-2 mb-1">
+<h3 class="font-headline-md text-[20px] text-on-surface leading-tight group-hover:text-primary transition-colors">Kerala Temple &amp; Backwater Retreat</h3>
+</div>
+<div class="flex items-center gap-1 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary-container fill">star</span>
+<span class="font-bold text-on-surface">4.7</span>
+<span class="">(89 reviews)</span>
+</div>
+</div>
+<!-- Key Details -->
+<div class="flex items-center gap-4 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="">7 Days / 6 Nights</span>
+</div>
+</div>
+<!-- Inclusion Tray -->
+<div class="flex gap-4 border-t border-b border-surface-variant py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 flex-1" title="Premium Hotel">
+<span class="material-symbols-outlined text-secondary text-[22px]">hotel</span>
+<span class="text-[10px] uppercase font-bold text-outline">Hotel</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="All Meals Included">
+<span class="material-symbols-outlined text-secondary text-[22px]">restaurant</span>
+<span class="text-[10px] uppercase font-bold text-outline">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="AC Transport">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+<span class="text-[10px] uppercase font-bold text-outline">Transit</span>
+</div>
+<div class="flex flex-col items-center gap-1 flex-1" title="Expert Guide">
+<span class="material-symbols-outlined text-secondary text-[22px]">person_raised_hand</span>
+<span class="text-[10px] uppercase font-bold text-outline">Guide</span>
+</div>
+</div>
+<!-- Footer: Price & Compare -->
+<div class="flex justify-between items-end pt-2">
+<label class="flex items-center gap-2 cursor-pointer group/compare">
+<input class="custom-checkbox" type="checkbox">
+<span class="text-sm font-medium text-on-surface-variant group-hover/compare:text-primary transition-colors">Compare</span>
+</label>
+<div class="text-right">
+<div class="text-xs text-on-surface-variant mb-1">Starting from</div>
+<div class="font-headline-md text-primary text-[22px] leading-none">₹32,000</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Load More / Pagination -->
+<div class="mt-12 flex justify-center">
+<button class="border-2 border-primary text-primary font-label-bold text-label-bold h-14 px-8 rounded-lg items-center justify-center hover:bg-surface-variant transition-colors active:scale-95">
+                        Load More Packages
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-highest w-full mt-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-stack-lg py-stack-lg max-w-container-max mx-auto items-start">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-secondary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined fill text-secondary-fixed">temple_hindu</span>
+                    DharmaYatra
+                </div>
+<p class="text-primary-fixed font-body-sm text-body-sm opacity-80">Guiding your spiritual journey with trust and comfort.</p>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-secondary-fixed mb-2">Company</h4>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Contact Support</a>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-secondary-fixed mb-2">Explore</h4>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Popular Destinations</a>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Sitemap</a>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-secondary-fixed mb-2">Legal</h4>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Terms of Service</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-primary-fixed-variant/30">
+<div class="px-margin-mobile md:px-stack-lg py-6 max-w-container-max mx-auto text-center font-body-sm text-body-sm text-primary-fixed opacity-60 flex justify-center items-center">
+                © 2024 DharmaYatra Pilgrimage Services. All rights reserved.
+            </div>
+</div>
+</footer>
+
+
+
+</body></html>

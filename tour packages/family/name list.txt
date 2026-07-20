@@ -1,0 +1,49 @@
+| No. | Tourist Attraction              | State/UT                  |
+| --- | ------------------------------- | ------------------------- |
+| 1   | Taj Mahal                       | Uttar Pradesh             |
+| 2   | Amber Fort                      | Rajasthan                 |
+| 3   | City Palace, Udaipur            | Rajasthan                 |
+| 4   | Hawa Mahal                      | Rajasthan                 |
+| 5   | Mehrangarh Fort                 | Rajasthan                 |
+| 6   | Mysore Palace                   | Karnataka                 |
+| 7   | Gol Gumbaz                      | Karnataka                 |
+| 8   | Radhanagar Beach                | Andaman & Nicobar Islands |
+| 9   | Athirappilly Waterfalls         | Kerala                    |
+| 10  | Munnar Tea Gardens              | Kerala                    |
+| 11  | Alleppey Backwaters             | Kerala                    |
+| 12  | Dudhsagar Falls                 | Goa/Karnataka             |
+| 13  | Hampi Monuments                 | Karnataka                 |
+| 14  | Chitrakote Waterfalls           | Chhattisgarh              |
+| 15  | Living Root Bridges             | Meghalaya                 |
+| 16  | Dawki River (Umngot River)      | Meghalaya                 |
+| 17  | Rohtang Pass                    | Himachal Pradesh          |
+| 18  | Pangong Lake                    | Ladakh                    |
+| 19  | Nubra Valley                    | Ladakh                    |
+
+
+
+
+
+| No. | Tourist Attraction          | Country              |
+| --- | --------------------------- | -------------------- |
+| 1   | Eiffel Tower                | France               |
+| 2   | Disneyland Paris            | France               |
+| 3   | Swiss Alps (Jungfraujoch)   | Switzerland          |
+| 4   | Mount Titlis                | Switzerland          |
+| 5   | Glacier 3000                | Switzerland          |
+| 6   | Colosseum                   | Italy                |
+| 7   | Leaning Tower of Pisa       | Italy                |
+| 8   | Venice Grand Canal          | Italy                |
+| 9   | London Eye                  | United Kingdom       |
+| 10  | Big Ben                     | United Kingdom       |
+| 11  | Gardens by the Bay          | Singapore            |
+| 12  | Marina Bay Sands SkyPark    | Singapore            |
+| 13  | Sentosa Island              | Singapore            |
+| 14  | Burj Khalifa                | United Arab Emirates |
+| 15  | Dubai Miracle Garden        | United Arab Emirates |
+| 16  | Museum of the Future        | United Arab Emirates |
+| 17  | Palm Jumeirah               | United Arab Emirates |
+| 18  | Universal Studios Japan     | Japan                |
+| 19  | Tokyo Disneyland            | Japan                |
+| 20  | Mount Fuji (viewing areas)  | Japan                |
+| 21  | Niagara Falls               | Canada / USA         |

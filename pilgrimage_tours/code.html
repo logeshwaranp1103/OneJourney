@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pilgrimage Tours - DharmaYatra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c2c7cf",
+                      "background": "#f7f9ff",
+                      "tertiary-fixed": "#a3f3cf",
+                      "secondary-fixed-dim": "#f6bd53",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#d1dbe8",
+                      "secondary": "#7d5700",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#00513a",
+                      "on-primary-fixed-variant": "#24496c",
+                      "surface-variant": "#d9e3f1",
+                      "primary-fixed": "#d0e4ff",
+                      "primary": "#002541",
+                      "surface": "#f7f9ff",
+                      "on-secondary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#00422f",
+                      "on-tertiary-container": "#63b291",
+                      "primary-fixed-dim": "#a6caf3",
+                      "on-surface-variant": "#42474e",
+                      "on-primary-container": "#82a5cd",
+                      "on-secondary-fixed-variant": "#5f4100",
+                      "on-secondary-container": "#725000",
+                      "on-background": "#121d26",
+                      "surface-bright": "#f7f9ff",
+                      "secondary-container": "#fdc257",
+                      "inverse-surface": "#27313c",
+                      "secondary-fixed": "#ffdeaa",
+                      "on-secondary-fixed": "#271900",
+                      "surface-container-high": "#dfe9f7",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#e8f2ff",
+                      "surface-container": "#e4effd",
+                      "on-surface": "#121d26",
+                      "primary-container": "#123b5d",
+                      "tertiary": "#002a1c",
+                      "surface-container-highest": "#d9e3f1",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#87d6b4",
+                      "on-primary-fixed": "#001d34",
+                      "on-tertiary-fixed": "#002115",
+                      "surface-container-low": "#edf4ff",
+                      "inverse-primary": "#a6caf3",
+                      "surface-tint": "#3d6185",
+                      "outline": "#73777f",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px",
+                      "card": "16px",
+                      "input": "12px"
+              },
+              "spacing": {
+                      "stack-md": "24px",
+                      "container-max": "1280px",
+                      "stack-sm": "12px",
+                      "margin-mobile": "20px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "stack-lg": "48px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": ["Manrope"],
+                      "body-sm": ["Inter"],
+                      "label-bold": ["Inter"],
+                      "display-lg": ["Manrope"],
+                      "headline-md": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-sm": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-bold": ["16px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              },
+              "boxShadow": {
+                  "level-1": "0px 4px 20px rgba(18, 59, 93, 0.08)",
+                  "level-2": "0px 12px 32px rgba(18, 59, 93, 0.12)"
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: #F8F6F1; /* Level 0 base as per guidelines */
+            color: theme('colors.on-surface');
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="antialiased font-body-md text-body-md">
+<!-- TopNavBar Shared Component -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm w-full">
+<div class="flex justify-between items-center w-full px-12 max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="text-headline-lg font-headline-lg font-bold text-primary dark:text-primary-fixed" href="#">
+                DharmaYatra
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Tour Packages</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 font-bold active opacity-80 scale-95 transition-all" href="#">Pilgrimage Tours</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Group Tours</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">AI Trip Planner</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About Us</a>
+</nav>
+<!-- Actions -->
+<div class="hidden md:flex items-center gap-stack-sm">
+<span class="font-label-bold text-label-bold text-primary dark:text-primary-fixed">+91 1800-DHARMA</span>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold h-[56px] px-6 rounded-lg hover:bg-primary-container transition-colors">
+                    Enquire Now
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-full z-0" data-alt="A sweeping, majestic view of an ancient Indian temple complex at golden hour. Warm, radiant sunlight bathes the intricately carved stone structures, creating a deeply spiritual and peaceful atmosphere. The sky is a soft blend of warm oranges and calm blues. The scene conveys a sense of timeless reverence, safety, and welcoming warmth suitable for multigenerational pilgrims." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfTB5gcUdz5GKvP5ad-CHzQF44gOsieKmcWNeoChr3YN8u6KcHEMEGrK1jDnjpjdlwx6qRPYIUCfGKt1tmcCMT5otWwOhWaMZYsnqqh_rT4AZ_gEjFZeqxVjmlUbDg5EYos1Y_L_GShW3z5Cwo0KX185iPdfjHcm43a-hiSfxNyIfEa0qy-m6D9qrWD9Akum_jRb3cflWHiJBSt06BgDqCYk9ldmEwwP6FX6CKT-OY9EgmcTGPAj7njp5JuulJkV2LPLnr2FqKXQg')"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40 z-10"></div>
+<div class="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-12 w-full text-center md:text-left flex flex-col items-center md:items-start gap-stack-md pt-12">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-3xl leading-tight drop-shadow-md">
+                Sacred Journeys,<br/> Carefully Organised
+            </h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl drop-shadow-sm">
+                Experience spiritual fulfillment with our expertly guided pilgrimage tours. Designed for comfort, safety, and deep reverence, ensuring peace of mind for every generation of your family.
+            </p>
+<div class="flex flex-col sm:flex-row gap-stack-sm mt-4">
+<button class="bg-secondary text-on-secondary font-label-bold text-label-bold h-[56px] px-8 rounded-lg shadow-level-1 hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2">
+                    Explore Pilgrimage Packages
+                    <span class="material-symbols-outlined">explore</span>
+</button>
+<button class="bg-transparent border-2 border-on-primary text-on-primary font-label-bold text-label-bold h-[56px] px-8 rounded-lg hover:bg-on-primary/10 transition-all flex items-center justify-center">
+                    Plan My Sacred Journey
+                </button>
+</div>
+</div>
+</section>
+<!-- Trust Badges Bar -->
+<div class="bg-surface-container py-6 border-b border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-12 flex flex-wrap justify-center md:justify-between items-center gap-6">
+<div class="flex items-center gap-3 text-primary-fixed-variant">
+<span class="material-symbols-outlined icon-fill text-3xl text-secondary">verified_user</span>
+<span class="font-label-bold text-label-bold">Vetted Guides</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed-variant">
+<span class="material-symbols-outlined icon-fill text-3xl text-secondary">accessible_forward</span>
+<span class="font-label-bold text-label-bold">Senior Citizen Friendly</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed-variant">
+<span class="material-symbols-outlined icon-fill text-3xl text-secondary">restaurant</span>
+<span class="font-label-bold text-label-bold">Pure Veg Meals</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed-variant">
+<span class="material-symbols-outlined icon-fill text-3xl text-secondary">health_and_safety</span>
+<span class="font-label-bold text-label-bold">Medical Assistance</span>
+</div>
+</div>
+</div>
+<!-- Main Content Area -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-12 py-stack-lg space-y-[96px]">
+<!-- Featured Destinations (Bento Grid Style) -->
+<section>
+<div class="mb-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">Sacred Destinations</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Discover holiest sites across India, curated for profound spiritual experiences.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Large Featured Card -->
+<div class="md:col-span-2 group relative h-[400px] rounded-card overflow-hidden shadow-level-1 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A vibrant, wide-angle shot of the iconic Meenakshi Temple gopuram in Madurai, South India. The intricate, colorful sculptures on the towering structure stand out against a clear blue sky. The lighting is bright and warm, typical of a sunny afternoon, conveying a sense of grandeur and deep cultural heritage fitting for a premium pilgrimage tour." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUnJv6PnVVKIhkMbxP9GA9nyxz8tMsQvEA0w4HV-v-gHlq7D9mE7kmsBNPEC1Y11JVPqgjCnQjpnXmiMQr5rGb2SCLKAtrd7xwNPoT0x9eaQewDX6voOyamAntJ82YWCcofl6RaPwIjl07IGeRDTtEFuyJyauIpQvAZeVrEU_UuY1GJEj5-Xvi9Kj5-zxk7eGCBi4Uzi4DLr_hRvWVWJ16qWoRqR3L2ATyP955Wacl4Whnt39pyCwT-7lSDmolf5X6XwM-qA7yB7c')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-stack-md w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-secondary/20 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-full text-sm font-label-bold mb-3 inline-block border border-secondary/30">South India</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary">Divine Tamil Nadu</h3>
+<p class="text-surface-container-high mt-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span> 7 Days | 6 Nights
+                                </p>
+</div>
+<div class="text-right">
+<span class="block text-sm text-surface-container-high mb-1">Starting from</span>
+<span class="font-headline-md text-headline-md text-secondary-fixed">₹35,000</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Smaller Card 1 -->
+<div class="group relative h-[400px] rounded-card overflow-hidden shadow-level-1 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A serene view of the Kashi Vishwanath temple area in Varanasi, North India, at dawn. Soft, misty light envelopes the ghats by the Ganges river. The mood is deeply peaceful and meditative, with soft pastel hues dominating the scene, representing a calming spiritual journey." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvFQz7dsG_OTURRdus2kesj4x67oBBMB3xwVv0ECoIrzmn5Yi4vMYbKiYapVI6LFXKGMZ54_yVYlkwJbzaBbIv-66RkHhr_geRb79f3PRSmXZf0zyxPoJpMcOfGqoEMpr9TDthgvu-HgnqLxFcGtaNudN2dv8LrEaSsyLrPtGDw1t30PNDET6V78Plxxts9P_mcU9oSgN3CNbvScfub82x8AlUfQTIvM_7P_8E0fiSj1XbJeScCYHtRxktgkxrEnJsiLCnVIB58x4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-stack-md w-full">
+<span class="bg-secondary/20 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-full text-sm font-label-bold mb-3 inline-block border border-secondary/30">North India</span>
+<h3 class="font-headline-md text-headline-md text-on-primary">Kashi Yatra</h3>
+<div class="flex justify-between items-center mt-2">
+<span class="text-surface-container-high text-sm">4 Days</span>
+<span class="font-headline-md text-headline-md text-secondary-fixed">₹22,000</span>
+</div>
+</div>
+</div>
+<!-- Smaller Card 2 -->
+<div class="group relative h-[300px] rounded-card overflow-hidden shadow-level-1 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A stunning, snow-capped mountain landscape surrounding the Kedarnath temple in the Himalayas. The temple is bathed in the golden light of sunrise, creating a stark, beautiful contrast with the cold blues and whites of the snow. The image evokes a sense of awe, purity, and a challenging but rewarding pilgrimage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBvKseiB5hZprunanNVHvXaC6NSvqi50PENgHifzjlFV_F-3FefPyQRSkose4HFWXc4UKGfXsL3NZfcqWndiR3XDl2tCGhp70JhCXpAMZBa0t63DyuzIULItECelXc44-v3BaHjoE803dVyw0CLX4AwzQEwTMI6RDtWdsmtiaeJkQk3kz_2IWijMXsc-dXo7ZsAZ7Jk_w0lvD39BQf0HoRprHEgX3qbo7rmT1eGLx94OYhiWrJFchO2PA_ot6vguJqXEFkia2b8NI0')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-stack-sm w-full">
+<span class="bg-secondary/20 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-full text-sm font-label-bold mb-2 inline-block border border-secondary/30">Char Dham</span>
+<h3 class="font-headline-md text-headline-md text-on-primary">Himalayan Chardham</h3>
+</div>
+</div>
+<!-- Smaller Card 3 -->
+<div class="group relative h-[300px] rounded-card overflow-hidden shadow-level-1 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A warm, inviting image of the Shirdi Sai Baba temple complex. Devotees are seen in peaceful prayer. The lighting is golden and comforting, reflecting a sense of faith and communal harmony. The architectural details are visible, emphasizing safety and organization." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsAJO9cyslP31GDjt37NvUejm1ZmQjAf3MVobEU08Zop7PclABqQa3wKl-BufkOdOj6QTIINukLa_IMSI7_ZLZIEmBYhI8VOVNZgWUmfWRlYwoPjRPz-q27hHJl1EfjGy7eEbUvBRV5im6HoAWRqF6CngDvk2c7yo0OODmfCm2ABMDH0qLyQ0Fcc72n2XHOsDZy5hvwScfGK0UujiieFk3hvun_rXD36bwvXM4XtbEHDKnybQfBygp7vffhogJ8-EX2N_0AcYf1WU')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-stack-sm w-full">
+<span class="bg-secondary/20 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-full text-sm font-label-bold mb-2 inline-block border border-secondary/30">Maharashtra</span>
+<h3 class="font-headline-md text-headline-md text-on-primary">Shirdi Darshan</h3>
+</div>
+</div>
+<!-- Smaller Card 4 -->
+<div class="group relative h-[300px] rounded-card overflow-hidden shadow-level-1 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A majestic view of one of the Jyotirlinga temples, perhaps Somnath, situated near the ocean. The temple is illuminated against a dusky sky, with gentle waves in the foreground. The mood is powerful and eternal, utilizing deep blues and warm stone colors to convey spiritual significance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-b5Ujt9S5KrdKpXc04aHzs_vnEjqIznb1F915oooPBTABcART4-lTAQFTYxmqHHkAqED7aThaZyFA5KrH1mk1rlD3wAfbEvG_cuYDlPznft1eaUHxYUxsMmqr9JfcXa4H6jnuBvFoY7paL8dxLYh_tG0awfJwsEiCd3tMbQHMr43rxeBkykF2SW_AYtH2LV2NZwWAPqScBu6ir6dBsUDYJKbAAFPn-WOGr37LIkBwdUxZMZ1FVSmj5SVPtBiYBfTBV8kGN3E30FM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-stack-sm w-full">
+<span class="bg-secondary/20 text-secondary-fixed backdrop-blur-sm px-3 py-1 rounded-full text-sm font-label-bold mb-2 inline-block border border-secondary/30">Pan India</span>
+<h3 class="font-headline-md text-headline-md text-on-primary">12 Jyotirlinga</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Packages with Detailed Badges -->
+<section class="bg-surface-container-lowest rounded-card p-stack-md md:p-stack-lg shadow-level-1 border border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-md gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Comprehensive Pilgrimage Packages</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Fully managed tours ensuring comfort and devotion focus.</p>
+</div>
+<button class="text-secondary font-label-bold text-label-bold flex items-center gap-1 hover:text-secondary-fixed-dim transition-colors">
+                    View All Packages <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Package Card 1 -->
+<div class="bg-surface flex flex-col sm:flex-row rounded-card overflow-hidden border border-outline-variant/20 hover:shadow-level-2 transition-shadow duration-300">
+<div class="w-full sm:w-2/5 h-48 sm:h-auto relative">
+<img alt="Rameswaram Temple Detail" class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up view of the intricate stone carvings on a temple pillar in Rameswaram, South India. Soft, diffused lighting highlights the craftsmanship. The overall tone is calm, historic, and reverent, employing a palette of warm greys and subtle earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCvQz0KgXnd9p2ZRnu9bToyvDdSSyRq6cxtSoft4vQkhj0-h4-LA-daSLe6_W0N_T4DtPdoSAm4xcRWy66BX_PT_BAPD8k5D9GgE97Wq-3kWiGrxw-C6fYKYRyn1I53XGIbhDAL4gr9er-hBTsyvdncuycW5h0Yt56XRVZ1gZnm5bYEukn4zrLrfJdJwprq8M9ZuUHEtSrtS8a3DgpSTSQwpxyhWwmqoi0f2IFFDp4RVO06FLjUV1tJGJjQNj5T3Rf4X0dSAfi7nU"/>
+<div class="absolute top-3 left-3 bg-white/90 backdrop-blur text-primary text-xs font-bold px-2 py-1 rounded">Best Seller</div>
+</div>
+<div class="w-full sm:w-3/5 p-stack-sm flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Rameswaram &amp; Madurai Yatra</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3">A profound journey covering the majestic Meenakshi Temple and the sacred Ramanathaswamy Temple, with guided VIP Darshan.</p>
+<!-- Detailed Badges -->
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-primary px-2 py-1 rounded-md text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">assist_walker</span> Low Walking
+                                </span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-primary px-2 py-1 rounded-md text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">medical_services</span> Medical Kit
+                                </span>
+<span class="inline-flex items-center gap-1 bg-secondary/10 text-secondary px-2 py-1 rounded-md text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">stars</span> VIP Darshan
+                                </span>
+</div>
+</div>
+<div class="mt-auto">
+<!-- Iconography Tray -->
+<div class="flex gap-4 border-t border-outline-variant/20 pt-3 mb-3 text-secondary">
+<span class="material-symbols-outlined" title="Premium Hotel">hotel</span>
+<span class="material-symbols-outlined" title="Pure Veg Meals">restaurant</span>
+<span class="material-symbols-outlined" title="Expert Guide">person_raised_hand</span>
+<span class="material-symbols-outlined" title="AC Transport">directions_bus</span>
+</div>
+<div class="flex justify-between items-center">
+<button class="text-secondary font-label-bold text-label-bold hover:underline">View Details</button>
+<span class="font-headline-md text-headline-md text-primary">₹28,500</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Package Card 2 -->
+<div class="bg-surface flex flex-col sm:flex-row rounded-card overflow-hidden border border-outline-variant/20 hover:shadow-level-2 transition-shadow duration-300">
+<div class="w-full sm:w-2/5 h-48 sm:h-auto relative">
+<img alt="Rishikesh Ashram" class="absolute inset-0 w-full h-full object-cover" data-alt="A peaceful evening scene at a serene ashram setting in Rishikesh. Gentle lamps illuminate a pathway beside the river Ganges. The atmosphere is quiet, meditative, and safe, with warm golden lights contrasting against the cool twilight blues of the water and sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUhI77FKiyEkUbw6PUZGPNa9d1J88oq5TYLMxhGeKIZEbwMSJW9HllWQssytAOBrXLn9A0wiNwnYZbIYRIqkt4ieOxWAgQgGwnfhNo1jaVMZb7IIDFfhCjwSC2DkYJGwbJPRZHP3zyivz6QaeM6teapasQtPI3lwSJz2Que9KU_68QX5gbc4-TQEX9IHOv8piz92qOqsa54Ts7aUs3jyKwfiFR0MFD2XMjW2f2ZU2hZm8WMz_7jqfIikT2hnHcMPYlgummkeOwcyo"/>
+</div>
+<div class="w-full sm:w-3/5 p-stack-sm flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Haridwar &amp; Rishikesh Retreat</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2 mb-3">Experience the divine Ganga Aarti, stay in peaceful ashrams, and enjoy comfortable, accessible transport throughout.</p>
+<!-- Detailed Badges -->
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-primary px-2 py-1 rounded-md text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">accessible</span> Wheelchair Friendly
+                                </span>
+<span class="inline-flex items-center gap-1 bg-secondary/10 text-secondary px-2 py-1 rounded-md text-xs font-medium">
+<span class="material-symbols-outlined text-[16px]">self_improvement</span> Satsang Included
+                                </span>
+</div>
+</div>
+<div class="mt-auto">
+<!-- Iconography Tray -->
+<div class="flex gap-4 border-t border-outline-variant/20 pt-3 mb-3 text-secondary">
+<span class="material-symbols-outlined" title="Ashram Stay">gite</span>
+<span class="material-symbols-outlined" title="Satvik Meals">restaurant</span>
+<span class="material-symbols-outlined" title="Spiritual Guide">person_raised_hand</span>
+<span class="material-symbols-outlined" title="AC Transport">directions_car</span>
+</div>
+<div class="flex justify-between items-center">
+<button class="text-secondary font-label-bold text-label-bold hover:underline">View Details</button>
+<span class="font-headline-md text-headline-md text-primary">₹15,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Route Timeline & Senior Assistance (Split Layout) -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Route Timeline -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-card p-stack-md shadow-level-1">
+<h2 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">route</span> Example Route: South India Yatra
+                </h2>
+<div class="relative border-l-2 border-outline-variant/40 ml-4 space-y-8 pb-4">
+<!-- Timeline Item 1 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-secondary border-4 border-surface-container-lowest"></div>
+<h3 class="font-label-bold text-label-bold text-primary">Day 1: Arrival in Madurai</h3>
+<p class="text-sm text-on-surface-variant mt-1">Check-in at premium hotel. Evening visit to Meenakshi Amman Temple.</p>
+<div class="flex gap-3 mt-2">
+<span class="text-xs bg-surface-container px-2 py-1 rounded flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hotel</span> Stay: Madurai</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-tertiary-container border-4 border-surface-container-lowest"></div>
+<h3 class="font-label-bold text-label-bold text-primary">Day 2: Madurai to Rameswaram</h3>
+<p class="text-sm text-on-surface-variant mt-1">Morning drive (3.5 hrs). Rest period. Evening darshan at Ramanathaswamy Temple.</p>
+<div class="flex gap-3 mt-2">
+<span class="text-xs bg-tertiary-container/10 text-tertiary-container px-2 py-1 rounded flex items-center gap-1 font-medium"><span class="material-symbols-outlined text-[14px]">health_and_safety</span> Safety Checkpoint</span>
+<span class="text-xs bg-surface-container px-2 py-1 rounded flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hotel</span> Stay: Rameswaram</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-secondary border-4 border-surface-container-lowest"></div>
+<h3 class="font-label-bold text-label-bold text-primary">Day 3: Agni Theertham &amp; Dhanushkodi</h3>
+<p class="text-sm text-on-surface-variant mt-1">Early morning holy bath at Agni Theertham. Guided excursion to Dhanushkodi.</p>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative pl-8">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-secondary border-4 border-surface-container-lowest"></div>
+<h3 class="font-label-bold text-label-bold text-primary">Day 4: Rameswaram to Kanyakumari</h3>
+<p class="text-sm text-on-surface-variant mt-1">Scenic coastal drive. Visit Vivekananda Rock Memorial via accessible ferry.</p>
+<div class="flex gap-3 mt-2">
+<span class="text-xs bg-surface-container px-2 py-1 rounded flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">hotel</span> Stay: Kanyakumari</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Senior Citizen Assistance -->
+<div class="bg-primary text-on-primary rounded-card p-stack-md shadow-level-1 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">elderly</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-2">Senior Citizen Care</h2>
+<p class="font-body-sm text-body-sm text-on-primary/80 mb-6">We understand the unique needs of elderly pilgrims. Our tours are meticulously planned to minimize physical strain while maximizing spiritual engagement.</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<div>
+<h4 class="font-label-bold text-label-bold">Zero-Hassle Darshan</h4>
+<p class="text-sm text-on-primary/70">Pre-arranged VIP access to avoid long standing queues.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<div>
+<h4 class="font-label-bold text-label-bold">On-Call Medical Support</h4>
+<p class="text-sm text-on-primary/70">First-aid trained guides and ties with local hospitals.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<div>
+<h4 class="font-label-bold text-label-bold">Mobility Assistance</h4>
+<p class="text-sm text-on-primary/70">Wheelchairs and battery-operated carts arranged where permitted.</p>
+</div>
+</li>
+</ul>
+</div>
+<button class="w-full mt-8 bg-secondary text-on-secondary font-label-bold text-label-bold h-[48px] rounded-lg hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+                    Read Care Guidelines
+                </button>
+</div>
+</section>
+<!-- Information & Prep -->
+<section class="text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Prepare for Your Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Access detailed information regarding temple timings, dress codes, and local customs to ensure a respectful and smooth pilgrimage.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-level-1 flex flex-col items-center w-40 hover:-translate-y-1 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">schedule</span>
+<span class="font-label-bold text-label-bold text-primary text-center">Temple<br/>Timings</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-level-1 flex flex-col items-center w-40 hover:-translate-y-1 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">checkroom</span>
+<span class="font-label-bold text-label-bold text-primary text-center">Dress<br/>Codes</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-level-1 flex flex-col items-center w-40 hover:-translate-y-1 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-3xl text-primary mb-2">calendar_month</span>
+<span class="font-label-bold text-label-bold text-primary text-center">Auspicious<br/>Dates</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-primary dark:bg-surface-container-highest border-t border-outline-variant/10 w-full mt-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-12 py-stack-lg max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md text-secondary-fixed">DharmaYatra</span>
+<p class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant">
+                    Dedicated to providing safe, comfortable, and spiritually fulfilling journeys for you and your family.
+                </p>
+</div>
+<!-- Links Columns -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-on-primary dark:text-on-surface mb-2">Explore</h4>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Tour Packages</a>
+<a class="font-body-sm text-body-sm text-secondary-fixed font-bold" href="#">Pilgrimage Tours</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Group Tours</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">AI Trip Planner</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-on-primary dark:text-on-surface mb-2">Company</h4>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-on-primary dark:text-on-surface mb-2">Legal</h4>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-primary/80 dark:text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-12 py-6 text-center">
+<p class="font-body-sm text-body-sm text-on-primary/60 dark:text-on-surface-variant/60">
+                    © 2024 DharmaYatra Pilgrimages. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

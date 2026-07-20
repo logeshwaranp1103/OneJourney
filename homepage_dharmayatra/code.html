@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&amp;family=Inter:wght@400..700&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#271900",
+                        "surface-container": "#e4effd",
+                        "primary-fixed": "#d0e4ff",
+                        "on-surface": "#121d26",
+                        "secondary": "#7d5700",
+                        "tertiary-fixed": "#a3f3cf",
+                        "on-primary-fixed": "#001d34",
+                        "surface-dim": "#d1dbe8",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#a6caf3",
+                        "on-primary-container": "#82a5cd",
+                        "inverse-on-surface": "#e8f2ff",
+                        "inverse-primary": "#a6caf3",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#27313c",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#123b5d",
+                        "outline": "#73777f",
+                        "on-tertiary-fixed-variant": "#00513a",
+                        "error": "#ba1a1a",
+                        "primary": "#002541",
+                        "surface-tint": "#3d6185",
+                        "surface": "#f7f9ff",
+                        "on-tertiary-container": "#63b291",
+                        "on-secondary-container": "#725000",
+                        "tertiary-fixed-dim": "#87d6b4",
+                        "secondary-fixed": "#ffdeaa",
+                        "surface-bright": "#f7f9ff",
+                        "on-surface-variant": "#42474e",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#002115",
+                        "surface-container-high": "#dfe9f7",
+                        "surface-container-low": "#edf4ff",
+                        "secondary-fixed-dim": "#f6bd53",
+                        "on-background": "#121d26",
+                        "secondary-container": "#fdc257",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#d9e3f1",
+                        "tertiary": "#002a1c",
+                        "on-primary-fixed-variant": "#24496c",
+                        "on-secondary-fixed-variant": "#5f4100",
+                        "surface-container-highest": "#d9e3f1",
+                        "outline-variant": "#c2c7cf",
+                        "background": "#f7f9ff",
+                        "tertiary-container": "#00422f",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "stack-lg": "48px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "label-bold": ["Inter"],
+                        "display-lg-mobile": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-bold": ["16px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-md": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- 1. Announcement Bar -->
+<div class="bg-surface-container-low text-on-surface-variant font-body-sm text-[12px] py-1.5 border-b border-outline-variant/20">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-stack-lg flex justify-between items-center">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">check_circle</span> No hidden charges</span>
+      <span class="text-outline-variant">|</span>
+      <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">hotel</span> Verified hotels</span>
+      <span class="text-outline-variant">|</span>
+      <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">support_agent</span> 24/7 travel support</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-primary">language</span>
+        <span class="material-symbols-outlined text-[18px] cursor-pointer hover:text-primary">compare_arrows</span>
+      </div>
+      <a href="tel:+911800PILGRIM" class="flex items-center gap-1.5 font-label-bold text-primary hover:text-secondary transition-colors">
+        <span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+        +91 1800-PILGRIM
+      </a>
+    </div>
+  </div>
+</div>
+<!-- 2. TopNavBar (JSON) -->
+<header class="bg-surface-container-lowest dark:bg-surface-dim font-body-sm text-body-sm md:font-body-md md:text-body-md docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none shadow-[0px_4px_20px_rgba(18,59,93,0.08)]"><div class="flex justify-between items-center w-full px-margin-mobile md:px-stack-lg max-w-container-max mx-auto h-20 gap-8">
+  <div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
+    <span class="material-symbols-outlined icon-fill text-[28px]">temple_hindu</span>
+    DharmaYatra
+  </div>
+  <ul class="hidden md:flex gap-8 h-full items-center">
+    <li class="h-full flex items-center">
+      <a href="#" class="text-primary border-b-2 border-secondary font-bold pb-1 font-body-sm active:scale-95 transition-transform">Tour Packages</a>
+    </li>
+    <li class="h-full flex items-center">
+      <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm active:scale-95 transition-transform">Pilgrimage Tours</a>
+    </li>
+    <li class="h-full flex items-center">
+      <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm active:scale-95 transition-transform">Group Tours</a>
+    </li>
+    <li class="h-full flex items-center">
+      <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm active:scale-95 transition-transform">AI Trip Planner</a>
+    </li>
+    <li class="h-full flex items-center">
+      <a href="#" class="text-on-surface-variant hover:text-primary font-body-sm active:scale-95 transition-transform">About</a>
+    </li>
+  </ul>
+  <div class="flex items-center gap-4">
+    <button class="bg-primary text-on-primary font-label-bold text-label-bold px-8 rounded-lg hover:bg-primary/90 active:scale-95 transition-all duration-200 whitespace-nowrap h-12">
+      Enquire Now
+    </button>
+    <button class="md:hidden text-primary p-2">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </div>
+</div></header>
+<main>
+<!-- 3. Hero Section with Search Panel -->
+<section class="relative w-full min-h-[600px] flex items-center justify-center pt-8 pb-16 px-margin-mobile md:px-stack-lg">
+<!-- Hero Background -->
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="A breathtaking, ultra-high-resolution panoramic landscape shot of a serene ancient Indian temple complex nestled on a riverbank at dawn. The soft, warm golden morning light bathes the detailed stone architecture, reflecting off the calm water. The atmosphere conveys deep spiritual peace, safety, and tranquility, perfectly suited for a premium senior citizen travel brand. Rich colors, clear sky, no harsh shadows." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC_VuSfXIKWmFgE7Yff93WYUGkakfYaKRD9rYlfGCvq4wUBd75lOGb45PGY6zcQP32dsP3ued2TECR2wuFK5fyvjh-n01a_WpgNsZivNQqSVnSoP_vF5lQ72L_LIj1rU6cY-K-DScawQiMSBU2ZmXSQvEiNqyDtO3QOQds41dYzqKWMwVq4foxJWfEiEgn4-Pahar4W0NNC2m8pWfExXLCXd3z96cFc25tqxqXpaSRVY9HVq9uso7zkRp536Xw12BPTFtu6hGxDYHg&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto flex flex-col items-center text-center gap-stack-lg">
+<div class="max-w-3xl space-y-4">
+<span class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed rounded-full font-label-bold text-label-bold text-sm tracking-wide shadow-sm">
+                        Curated Spiritual Experiences
+                    </span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary text-balance">
+                        Plan Your Sacred Journey with Confidence
+                    </h1>
+<p class="font-body-lg text-body-lg text-surface-container-lowest text-balance mx-auto max-w-2xl font-medium opacity-100"><br></p>
+</div>
+<!-- Search Panel -->
+<div class="w-full max-w-5xl bg-surface-container-lowest/95 backdrop-blur-md p-4 md:p-2 rounded-2xl shadow-[0px_12px_32px_rgba(18,59,93,0.12)] border border-outline-variant/20 flex flex-col md:flex-row items-stretch md:items-center gap-2">
+  <div class="grid grid-cols-1 md:grid-cols-4 grow divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+    <!-- Destination -->
+    <div class="flex flex-col gap-1 p-4 hover:bg-surface-container-low transition-colors rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+      <label class="font-label-bold text-[12px] uppercase tracking-wider text-outline">Destination</label>
+      <div class="relative flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+        <input class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md text-on-surface placeholder:text-outline-variant" placeholder="Where to?" type="text">
+      </div>
+    </div>
+    <!-- Travel Month -->
+    <div class="flex flex-col gap-1 p-4 hover:bg-surface-container-low transition-colors">
+      <label class="font-label-bold text-[12px] uppercase tracking-wider text-outline">Travel Month</label>
+      <div class="relative flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+        <select class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md text-on-surface appearance-none cursor-pointer">
+          <option disabled="" selected="" value="">Select Month</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+        </select>
+      </div>
+    </div>
+    <!-- Duration -->
+    <div class="flex flex-col gap-1 p-4 hover:bg-surface-container-low transition-colors">
+      <label class="font-label-bold text-[12px] uppercase tracking-wider text-outline">Duration</label>
+      <div class="relative flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+        <select class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md text-on-surface appearance-none cursor-pointer">
+          <option disabled="" selected="" value="">Any Duration</option>
+          <option value="1-3">1-3 Days</option>
+          <option value="4-7">4-7 Days</option>
+        </select>
+      </div>
+    </div>
+    <!-- Travellers -->
+    <div class="flex flex-col gap-1 p-4 hover:bg-surface-container-low transition-colors">
+      <label class="font-label-bold text-[12px] uppercase tracking-wider text-outline">Travellers</label>
+      <div class="relative flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">group</span>
+        <select class="w-full bg-transparent border-none p-0 focus:ring-0 font-body-md text-on-surface appearance-none cursor-pointer">
+          <option selected="" value="2">2 Adults, 0 Children</option>
+          <option value="4">4 Adults</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- Search Button -->
+  <button class="bg-primary text-on-primary h-14 md:h-auto md:aspect-square lg:aspect-auto lg:px-8 rounded-xl font-label-bold text-label-bold hover:bg-surface-tint active:scale-95 transition-all flex items-center justify-center gap-2 shadow-sm m-2">
+    <span class="material-symbols-outlined text-[24px]">search</span>
+    <span class="lg:inline">Find Packages</span>
+  </button>
+</div>
+</div>
+</section>
+<!-- 4. Trust Metrics -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-stack-lg py-stack-md">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-gutter divide-x divide-outline-variant/30 bg-surface-container rounded-xl p-8 shadow-[0px_4px_20px_rgba(18,59,93,0.05)] border border-outline-variant/20">
+<div class="flex flex-col items-center text-center px-4">
+<span class="font-headline-lg text-headline-lg text-primary">15+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Years of Trust</span>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="font-headline-lg text-headline-lg text-primary">10k+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Happy Yatris</span>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="font-headline-lg text-headline-lg text-primary flex items-center gap-1">4.8 <span class="material-symbols-outlined icon-fill text-secondary-fixed-dim text-[24px]">star</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Average Rating</span>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="font-headline-lg text-headline-lg text-primary">50+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sacred Destinations</span>
+</div>
+</div>
+</section>
+<!-- 5. Featured Packages -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-stack-lg py-stack-lg flex flex-col gap-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-end gap-4 border-b border-outline-variant/30 pb-4">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Featured Pilgrimages</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Carefully crafted itineraries for a deeply fulfilling spiritual journey.</p>
+</div>
+<button class="font-label-bold text-label-bold text-secondary flex items-center gap-1 hover:text-primary transition-colors">
+                    View All Packages <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Package Card 1 -->
+<article class="bg-surface-container-lowest rounded-[16px] shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col border border-outline-variant/10 group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-60 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A bright, beautiful daytime shot of the Meenakshi Amman Temple in Madurai. The intricately carved, colorful gopuram stands tall against a clear blue sky. Professional photography, vibrant yet dignified colors, representing a premium travel destination for families." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR1WO1m045T-GrLKlEhu4yWkAV-yqirE6T9-XCD7aHTt77PmDhai5rcKm8JPdikyxCH9jbmbP1EvY0zNruVjnlPZIkUpvzloF_txweNDM-Jk0VcTib8oSVFzXL8HGk0Ul4pd02bO76SeOAkwvmyEpcT0ti2dDyrvUt-rRAU7PQZl8y18x9vtKRQZ7j_GePdXeSbgmY86iMRhngYZM_WQmkklVviR8lWVLx0gIV68DPr61thdmvdF6eO8evykFx5ryLJMIOAiy1-Bs">
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-bold text-[12px] shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">elderly</span> Senior Friendly
+                            </span>
+</div>
+<div class="absolute top-4 right-4 bg-error-container text-on-error-container px-3 py-1 rounded-full font-label-bold text-[12px] shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> Fast Filling
+                        </div>
+</div>
+<div class="p-6 flex flex-col grow gap-4">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">Divine South: Madurai &amp; Rameswaram</h3>
+<div class="bg-surface-container-high px-2 py-1 rounded text-sm font-label-bold text-on-surface-variant whitespace-nowrap">4D/3N</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-2">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+                            Madurai - Rameswaram - Dhanushkodi
+                        </div>
+<!-- Iconography Tray -->
+<div class="flex gap-4 border-y border-outline-variant/20 py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 text-secondary" title="3-Star Hotel">
+<span class="material-symbols-outlined icon-fill text-[20px]">hotel</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Stay</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="Pure Veg Meals">
+<span class="material-symbols-outlined icon-fill text-[20px]">restaurant</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="AC Transport">
+<span class="material-symbols-outlined icon-fill text-[20px]">directions_car</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Travel</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="Expert Guide">
+<span class="material-symbols-outlined icon-fill text-[20px]">person_pin_circle</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Guide</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex flex-col">
+<span class="text-[12px] text-on-surface-variant">Starting from</span>
+<span class="font-headline-md text-headline-md text-primary">₹14,500 <span class="font-body-sm text-body-sm text-outline-variant font-normal">/pp</span></span>
+</div>
+<button class="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Package Card 2 -->
+<article class="bg-surface-container-lowest rounded-[16px] shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col border border-outline-variant/10 group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+<div class="relative h-60 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene twilight view of the ghats in Varanasi, with gentle diyas (oil lamps) floating on the calm Ganges river. The ancient stone steps and distant temples create a deeply spiritual and peaceful atmosphere. High quality, warm lighting, conveying safety and tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD55yje_WBSPz_DrWBCODVi0yoGveTFXaZJHAu3zsLTqz55Kpl6Kp5LH6DXhJsMWhV5s-UbXAwRlGbOrYtSIf0EnsnPvUkDQMDHJ682aMHGLpmf1jwaDQ0wajesfsKbwZ8wWua4uxKUEydTwFxuuqCO6qp3Ypiu04MnEdPtqPAeSMJz1c3c5eHGz-c_r_uZTT3VLDTvsgjk_hEymfWOdmfQorhEO0hTh8HBMtHybwxGA--TpJan8EsRmEyklC0J1vb0hR-wPvRtbx8">
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full font-label-bold text-[12px] shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">elderly</span> Senior Friendly
+                            </span>
+</div>
+</div>
+<div class="p-6 flex flex-col grow gap-4">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">Awadh &amp; Kashi Darshan</h3>
+<div class="bg-surface-container-high px-2 py-1 rounded text-sm font-label-bold text-on-surface-variant whitespace-nowrap">5D/4N</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-2">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+                            Ayodhya - Varanasi - Prayagraj
+                        </div>
+<!-- Iconography Tray -->
+<div class="flex gap-4 border-y border-outline-variant/20 py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 text-secondary" title="4-Star Hotel">
+<span class="material-symbols-outlined icon-fill text-[20px]">hotel</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Stay</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="Pure Veg Meals">
+<span class="material-symbols-outlined icon-fill text-[20px]">restaurant</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="AC Transport">
+<span class="material-symbols-outlined icon-fill text-[20px]">directions_car</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Travel</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex flex-col">
+<span class="text-[12px] text-on-surface-variant">Starting from</span>
+<span class="font-headline-md text-headline-md text-primary">₹18,200 <span class="font-body-sm text-body-sm text-outline-variant font-normal">/pp</span></span>
+</div>
+<button class="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Package Card 3 (Hidden on tablet to maintain grid, visible on large desktop) -->
+<article class="bg-surface-container-lowest rounded-[16px] shadow-[0px_4px_20px_rgba(18,59,93,0.08)] overflow-hidden flex flex-col border border-outline-variant/10 group cursor-pointer hover:-translate-y-1 transition-transform duration-300 hidden lg:flex">
+<div class="relative h-60 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautiful, wide shot of the majestic Somnath Temple by the sea in Gujarat during a vibrant sunset. The golden hour light emphasizes the grand architecture and the expansive ocean in the background, creating a mood of reverence and tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktLk9KBwBbY43-H4Zj4a2GnAF8CzgIrd-myWuc0oIuVV8gwf4tT1H76DiPRJPB2HorBAsutlbc3yd-XTQjxUsTp3Xoh20VvTofjOODKZiYa1cN86Dxmne44mTjWmbY6oMqidqUveNlpTaZLcxdaTRspz77BdhepjnmyOtxwbXE9H9V-krogUws8QrxcAAGKC2UGVIOyygDHEdHoByrhR8xfzMBqiAr0lpaD3QL5CzOf29TChM_iCy2qFCYlYddmSlOFQABgWjo38">
+</div>
+<div class="p-6 flex flex-col grow gap-4">
+<div class="flex justify-between items-start gap-4">
+<h3 class="font-headline-md text-headline-md text-primary leading-tight">Jyotirlinga Yatra: Gujarat</h3>
+<div class="bg-surface-container-high px-2 py-1 rounded text-sm font-label-bold text-on-surface-variant whitespace-nowrap">6D/5N</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm mb-2">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+                            Somnath - Dwarka - Nageshwar
+                        </div>
+<!-- Iconography Tray -->
+<div class="flex gap-4 border-y border-outline-variant/20 py-3 mt-auto">
+<div class="flex flex-col items-center gap-1 text-secondary" title="Premium Hotel">
+<span class="material-symbols-outlined icon-fill text-[20px]">hotel</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Stay</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="Pure Veg Meals">
+<span class="material-symbols-outlined icon-fill text-[20px]">restaurant</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Meals</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="AC Transport">
+<span class="material-symbols-outlined icon-fill text-[20px]">directions_car</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Travel</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-secondary" title="Special Darshan">
+<span class="material-symbols-outlined icon-fill text-[20px]">visibility</span>
+<span class="text-[10px] font-label-bold uppercase tracking-wider text-on-surface-variant">Darshan</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex flex-col">
+<span class="text-[12px] text-on-surface-variant">Starting from</span>
+<span class="font-headline-md text-headline-md text-primary">₹24,000 <span class="font-body-sm text-body-sm text-outline-variant font-normal">/pp</span></span>
+</div>
+<button class="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 6. Senior Citizen Assistance Section -->
+<section class="w-full bg-surface-container py-16">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-stack-lg flex flex-col md:flex-row items-center gap-stack-lg">
+<div class="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-[0px_12px_32px_rgba(18,59,93,0.12)] border-4 border-surface-container-lowest">
+<img class="w-full h-auto object-cover aspect-[4/3]" data-alt="A heartwarming, high-quality photograph of an elderly Indian couple smiling warmly, being assisted by a professional, neatly uniformed travel coordinator near a temple entrance. The mood is highly supportive, respectful, and safe, indicating premium service and care for senior citizens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl5f078gDpPYkksW3lebpptLDRUMgr1TXMc-701KNDSmgrLpzPwFVeVUb8j6ZZqq45vtdakVlchtvTRR45QTmE_YgYgvlNK7dC7mMwWziZUMmCvcGQXOKAaWMKfqv1VrsHGj-RDmthJZp8N8fqr5RlaxPEcK4IBtEcEJ1EQLj9oTGwDID9P_3YVmX_zUM8WPiqpJtBXulTr3Ojzpuwn9JOT5c97gThYQ2F2WktCB6iBheaL5p7qpe3LgmVkWr-uYxR63s8iW3jc5s">
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<div class="inline-flex items-center gap-2 bg-secondary-fixed/50 text-on-secondary-fixed px-4 py-2 rounded-full font-label-bold text-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+                        Specialized Elder Care
+                    </div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Journeys Designed for Comfort and Pace</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        We understand that physical comfort is essential for a peaceful spiritual experience. Our specialized itineraries for senior citizens prioritize ease of access and constant support.
+                    </p>
+<div class="space-y-4 pt-4">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary shadow-sm">
+<span class="material-symbols-outlined icon-fill">accessible</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">Reduced Walking &amp; Easy Access</h4>
+<p class="text-body-sm text-on-surface-variant mt-1">Hotels located close to temples and arranged transport right to the closest permitted drop-off points.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary shadow-sm">
+<span class="material-symbols-outlined icon-fill">medical_services</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">On-Call Medical Support</h4>
+<p class="text-body-sm text-on-surface-variant mt-1">24/7 access to local doctors and basic first-aid kits available in all our transport vehicles.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shrink-0 text-secondary shadow-sm">
+<span class="material-symbols-outlined icon-fill">diversity_3</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">Dedicated Coordinators</h4>
+<p class="text-body-sm text-on-surface-variant mt-1">Compassionate guides trained to assist elders, handle luggage, and manage queue arrangements.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Final CTA -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-stack-lg py-16 mt-stack-md">
+<div class="bg-primary rounded-2xl p-8 md:p-12 text-center flex flex-col items-center gap-6 shadow-[0px_12px_32px_rgba(18,59,93,0.2)] relative overflow-hidden">
+<!-- Subtle pattern overlay -->
+<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<h2 class="font-display-lg-mobile md:font-display-lg text-on-primary relative z-10 max-w-2xl">
+                    Ready to Plan Your Sacred Journey?
+                </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed relative z-10 max-w-xl">
+                    Our travel experts are ready to curate a customized itinerary for your family, ensuring a seamless and divine experience.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4 relative z-10 w-full sm:w-auto">
+<button class="bg-surface-container-lowest text-primary h-14 px-8 rounded-lg font-label-bold text-label-bold hover:bg-surface-variant transition-colors flex items-center justify-center gap-2 whitespace-nowrap shadow-sm">
+                        Enquire Now
+                    </button>
+<button class="bg-transparent border-2 border-surface-container-lowest text-on-primary h-14 px-8 rounded-lg font-label-bold text-label-bold hover:bg-surface-container-lowest/10 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                        Chat on WhatsApp
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- 10. Footer (JSON) -->
+<footer class="bg-primary dark:bg-surface-container-highest font-body-sm text-body-sm text-on-primary dark:text-on-surface w-full mt-stack-lg flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-stack-lg py-stack-lg max-w-container-max mx-auto items-start">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-secondary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined icon-fill text-[28px]">temple_hindu</span>
+                    DharmaYatra
+                </div>
+<p class="text-primary-fixed dark:text-on-surface-variant opacity-80">
+                    Facilitating sacred journeys with trust, transparency, and utmost care for over 15 years.
+                </p>
+</div>
+<!-- Links Columns -->
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-1">Company</h4>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">About Us</a>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Contact Support</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-1">Explore</h4>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Popular Destinations</a>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Sitemap</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-secondary-fixed mb-1">Legal</h4>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Privacy Policy</a>
+<a class="text-primary-fixed dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Terms of Service</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-primary-fixed/20">
+<div class="px-margin-mobile md:px-stack-lg py-6 max-w-container-max mx-auto text-center text-primary-fixed dark:text-on-surface-variant opacity-80 flex justify-center items-center">
+                © 2024 DharmaYatra Pilgrimage Services. All rights reserved.
+            </div>
+</div>
+</footer>
+
+
+
+
+
+</body></html>
